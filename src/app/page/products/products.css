@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+img{
+    height: 18rem;
+    /*mantiene la calidad*/
+    object-fit: cover;
+}
+
+@media (min-width: 751px) {
+    .card {
+        width: 18rem;
+
+        .title {
+            color: rgb(35, 14, 219);
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .card{
+        width: 9rem;
+    }
+
+    .title {
+        color: aqua;
+    }
+}
