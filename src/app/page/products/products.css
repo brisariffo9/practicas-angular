@@ -1,4 +1,4 @@
-.container {
+.row {
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -11,7 +11,7 @@ img{
 
 @media (min-width: 751px) {
     .card {
-        width: 18rem;
+        width: 16rem;
 
         .title {
             color: rgb(35, 14, 219);
@@ -27,4 +27,8 @@ img{
     .title {
         color: aqua;
     }
+}
+.btn-action{
+    background-color: pink;
+    color: rgb(214, 108, 179);
 }

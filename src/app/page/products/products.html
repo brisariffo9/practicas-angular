@@ -1,26 +1,25 @@
 <h1 class="title"></h1>
+<!-- 
+lg-> larger 
+ lg:tamaño de pantalla mas grande -> PC
+ md-> media
+ md: tamaño de panatalla media -> TABLET
+ sm-> smal
+ sm:tamaño de pantalla chica -> CELULAR
+  -->
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div  *ngFor="let i of infotarjeta" class="col-3">
             <div class="card">
-                <img src="../../../../assets/diesel.jpg" class="" alt="...">
+                <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
                 <div class="card-body">
-                    <h5 class="card-title">Collar delicado</h5>
-                    <p class="card-text">Es un collar para todos los dias!!!.</p>
+                    <h5 class="card-title">{{i.titulo}} - {{i.fechapublicacion}}</h5>
+                    <p class="card-text"></p>
                     <a href="#" class="btn btn-action">ver</a>
                 </div>
 
             </div>
-
-            <div class="card">
-                <img src="../../../../assets/aros.jpg" class="" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Collar delicado</h5>
-                    <p class="card-text">Es un collar para todos los dias!!!.</p>
-                    <a href="#" class="btn btn-action">ver</a>
-                </div>
-
+            
             </div>
-        </div>
     </div>
 </div>
