@@ -41,7 +41,39 @@ constructor(){
       img:"../../../../assets/cartera rosa lv.jpg",
       alt:"cartera lv rosa",
       titulo:"cartera LV rosada ",
-      descripcion:"Foto decartera LV rosa",
+      descripcion:"Foto de cartera LV rosa",
+      fechapublicacion:25
+    },
+    {
+      id:"5T",
+      img:"../../../../assets/carteramarron.jpg",
+      alt:"cartera marron",
+      titulo:"cartera marron basica ",
+      descripcion:"Foto de cartera marron",
+      fechapublicacion:25
+    },
+    {
+      id:"6T",
+      img:"../../../../assets/pandora.jpg",
+      alt:"plusera plateada y rosa",
+      titulo:"pulsera pandora plateada con detalles en rosa ",
+      descripcion:"Foto de pandora",
+      fechapublicacion:25
+    },
+    {
+      id:"7T",
+      img:"../../../../assets/cereza.jpg",
+      alt:"aros de cereza",
+      titulo:"aros colgantes de cereza ",
+      descripcion:"Foto de colgantes de cereza",
+      fechapublicacion:25
+    },
+    {
+      id:"8T",
+      img:"../../../../assets/llaverocere.jpg",
+      alt:"llavero de cereza",
+      titulo:"llavero de cereza ",
+      descripcion:"foto del llavero",
       fechapublicacion:25
     },
   ]

@@ -18,6 +18,19 @@
 display: flex;
 gap:30px;
 }
+.cuerpo2{
+display: flex;
+gap:30px;
+}
 .card-img-top{
 height: 19rem;
+}
+.carousel{
+    height: 12rem;
+    width: 100px;
+}
+.carousel-item{
+    height: 20rem;
+    /*mantiene la calidad*/
+    object-fit: cover;
 }
