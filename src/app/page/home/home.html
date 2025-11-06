@@ -1,15 +1,15 @@
 <h1 id="titulo">ACCESORIOS</h1>
 
-<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+<div id="carousel" class="carousel-slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="joyas.jpg"  class="d-block w-100" alt="...">
+      <img src="../../../assets/joyas.jpg" style="width: 18rem" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="evillas.jpg" class="d-block w-100" alt="...">
+      <img src="../../../assets/muchascarteras.jpg" style="width: 18rem" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="muchascarteras.jpg" class="d-block w-100" alt="...">
+      <img src="../../../assets/evillas.jpg" class="d-block w-100" style="width: 18rem" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -20,6 +20,51 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infotarjeta" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.titulo}}</h5>
+                    <p class="card-text">{{i.descripcion}} - {{i.fechapublicacion}}</p>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#ver" (click)="verMas(i)">ver mas info</button>
+                       
+                </div>
+
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="ver" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="ver">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class=""modal-imagen>
+
+                                <img src="{{tarjetaseleccionada?.img}}" alt="{{tarjetaseleccionada?.alt}}">
+                            </div>
+                            
+                            <div class="modal-descripcion">
+                                {{tarjetaseleccionada?.descripcion}}
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">jsjsjsjs</button>
+                            <button type="button" class="btn btn-primary">jojojoj</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="cuerpo">
@@ -80,8 +125,8 @@
   <div class="card" style="width: 18rem;">
     <img src="../../../../assets/evillas de estrella.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">evillas</h5>
-      <p class="card-text">evillas de estrallas color rojo.</p>
+      <h5 class="card-title">Hebillas</h5>
+      <p class="card-text">Hebillas de estrellas color rojo.</p>
       <a href="#" class="btn btn-action">ver</a>
     </div>
   </div>

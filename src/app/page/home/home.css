@@ -27,10 +27,53 @@ height: 19rem;
 }
 .carousel{
     height: 12rem;
-    width: 100px;
+    width: 30px;
 }
-.carousel-item{
-    height: 20rem;
+
+.carousel{
+    height: 100rem;
     /*mantiene la calidad*/
     object-fit: cover;
+}
+
+
+
+.carousel-slide{
+    background-color: blanchedalmond;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+img{
+    height: 18rem;
+    /*mantiene la calidad*/
+    object-fit: cover;
+}
+
+@media (min-width: 751px) {
+    .card {
+        width: 100%;
+        height: 100%;
+
+        .title {
+            color: rgb(35, 14, 219);
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .card{
+        width: 100%;
+    }
+
+    .title {
+        color: aqua;
+    }
+}
+.btn-action{
+    background-color: pink;
+    color: rgb(214, 108, 179);
 }

@@ -1,16 +1,14 @@
-
-
 import { Component } from '@angular/core';
-import { joyas } from '../../models/joyas'; 
+import { joyas } from '../../../../models/joyas';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-
+import { Products } from '../../products';
 @Component({
   selector: 'app-new-product',
   imports: [ReactiveFormsModule],
-  templateUrl: './contact.html',
-  styleUrl: './contact.css'
+  templateUrl: './new-product.html',
+  styleUrl: './new-product.css'
 })
-export class Contact {
+export class NewProduct {
   private contadorId = 1;
   /*propiedad privada informacion sencible*/
 

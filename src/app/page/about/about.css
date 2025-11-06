@@ -1,0 +1,10 @@
+ #IMAGEN{
+     height: 12rem;
+    width: 30px;
+     object-fit: cover;
+ }
+ #titulo{
+    font-size: 70px;
+    text-align: center;
+    color: rgb(252, 252, 252);
+}

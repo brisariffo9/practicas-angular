@@ -9,32 +9,30 @@ import { Tarjeta } from '../../models/tarjeta';
   styleUrl: './products.css'
 })
 export class Products {
-public infotarjeta: Tarjeta[];
+public infoCarteras: Tarjeta[];
+  public infoJoyas: Tarjeta[] = [];
+public infoMaquillaje: Tarjeta[];
 
 constructor(){
-  this.infotarjeta = [
+  this.infoCarteras = [
+
     { id:"1T",
       img:"../../../../assets/diesel.jpg",
       alt:"cartera diesel",
       titulo:"cartera Diesel",
       descripcion:"Foto de cartera",
-      fechapublicacion:25
+      fechapublicacion:25,
+      precio:"$80000",
     },
-    {
-      id:"2T",
-      img:"../../../../assets/aros.jpg",
-      alt:"aros",
-      titulo:"aros dorados",
-      descripcion:"Foto de aros",
-      fechapublicacion:25
-    },
+    
     {
       id:"3T",
       img:"../../../../assets/lv.jpg",
       alt:"cartera lv",
       titulo:"cartera LV ",
       descripcion:"Foto decartera LV",
-      fechapublicacion:25
+      fechapublicacion:25,
+       precio:"$3300",
     },
     {
       id:"4T",
@@ -76,7 +74,43 @@ constructor(){
       descripcion:"foto del llavero",
       fechapublicacion:25
     },
+    {
+      id:"9T",
+      img:"../../../../assets/pinzaco.jpg",
+      alt:"pinza de pelo",
+      titulo:"pinza de lazo",
+      descripcion:"pinza de lazo plateado",
+      fechapublicacion:25
+    },
+    {
+      id:"10T",
+      img:"../../../../assets/collarlazos.jpg",
+      alt:"collar",
+      titulo:"collar plateado ",
+      descripcion:"collar plateado con moños o lazos estilo coquette",
+      fechapublicacion:25
+    },
+    {
+      id:"11T",
+      img:"../../../../assets/cadenacintura.jpg",
+      alt:"cadena",
+      titulo:"cadena para la cintura ",
+      descripcion:"cadena fina,plateada de flores estilo margaritas ",
+      fechapublicacion:25
+    },
+    {
+      id:"12T",
+      img:"../../../../assets/llaverosperlas.jpg",
+      alt:"colgantes de celular",
+      titulo:"colgante para celular  ",
+      descripcion:"colgante de perlas",
+      fechapublicacion:25
+    },
+    
   ]
+
+
+this.infoMaquillaje=[]
 }
 tarjetaseleccionada:any = null
 
